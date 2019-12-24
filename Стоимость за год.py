@@ -121,10 +121,12 @@ def Stoim(y):
 
         df31 = pd.read_csv('TCBT_2_III_2017_monthly.csv')
         df31 = df31[(df31['REGION']=="78000 - ЯРОСЛАВСКАЯ ОБЛАСТЬ")&(df31['NAPR']=="ЭК")]
-
-
-    idf=pd.concat((idf1, idf2,idf3,idf4),).reset_index()
-
+    
+    if x==2017:
+        idf=pd.concat((idf1, idf2,idf3),).reset_index()
+    else:
+        idf=pd.concat((idf1, idf2,idf3,idf4),).reset_index()
+        
     if x==2017:
         idfnew=pd.concat((idf11, idf22,idf33),).reset_index()
     else:
