@@ -78,7 +78,7 @@ def Top(x, y):
 
     import matplotlib.pyplot as plt
     iiidf.plot.pie(x='STRANA', y='NETTO' ,figsize=(15,15))
-    plt.title("Топ 10 стран-экспортеров по НЕТТО за 2013 год")
+    plt.title("Топ 10 стран по НЕТТО за 2013 год")
     plt.show()
 
     return iiidf
